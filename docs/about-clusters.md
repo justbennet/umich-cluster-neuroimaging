@@ -12,11 +12,13 @@ a _job scheduler_.  In the case of ITS ARC clusters, both of those are
 from software called Slurm.  See the bottom of this page for a link to
 the online Slurm documentation.
 
+
+
 You may find opening our [example job script](basic-job-script.html)
 in another window (or tab) helpful, as you can then follow along in the
 script with the explanations of the options in what follows.
 
-## 
+
 
 ## References
 

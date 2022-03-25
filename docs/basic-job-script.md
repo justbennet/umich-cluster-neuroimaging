@@ -9,17 +9,17 @@ for job scripts on the ITS ARC clusters that use Slurm.
 #---------------------------------------------
 # Slurm preamble
 
-#SBATCH --job-name=generic
+#SBATCH --job-name=id14237689
+#SBATCH --time=1:00:00
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=5g
 
-#SBATCH --time=1:00:00
-
-#SBATCH --account=support
+#SBATCH --account=example
 #SBATCH --partition=standard
+
 #SBATCH --mail-type=NONE
 
 #---------------------------------------------
