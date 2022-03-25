@@ -1,4 +1,4 @@
-# University of Michigan: Using ITS ARC clusters fo neuroimaging
+# University of Michigan: Using ITS ARC clusters for neuroimaging
 
 This repository contains documentation and examples for using the
 University of Michigan, ITS ARC clusters for neuroimaging.
