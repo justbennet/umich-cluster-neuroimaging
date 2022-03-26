@@ -1,4 +1,4 @@
-# Please use the links below to go to each section.
+### Table of contents
 
 [An introduction to cluster computing](about-clusters.html)
 
