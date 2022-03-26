@@ -86,3 +86,12 @@ zero seconds.  You can specify days with, for example, `--time=1-2:03:04`
 which asks for one day, two hours, three minutes, and four seconds.
 
 ## Job resources
+
+_Job resources_ simply refers to all the attributes about the machinery
+on which your job will run, which includes number of computers, the number
+of cores (processors) on each, the amount of memory available, and in
+some cases information about any desired GPUs.
+
+### Tasks versus processes versus threads
+
+
