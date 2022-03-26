@@ -4,4 +4,4 @@
 
 [Basic set of Slurm job options](basic-job-options.html)
 
-[A first job script](job_scripts.html)
+[A first job script](job-scripts.html)
