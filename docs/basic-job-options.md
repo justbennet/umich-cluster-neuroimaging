@@ -222,3 +222,4 @@ to use with this option.
 NOTE:  The account, `example`, in the example script **must** be changed
 before you submit the job or your job will be rejected with an error.
 
+Next section:  [Slurm job scripts](job_scripts.html)
