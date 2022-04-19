@@ -24,4 +24,5 @@ script with the explanations of the options in what follows.
 
 Slurm documentation:  https://slurm.schedmd.com/
 
+Previous section: [Contents](index.html)
 Next section:  [Basic set of Slurm job options](basic-job-options.html)

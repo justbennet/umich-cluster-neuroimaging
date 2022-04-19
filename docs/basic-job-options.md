@@ -222,4 +222,5 @@ to use with this option.
 NOTE:  The account, `example`, in the example script **must** be changed
 before you submit the job or your job will be rejected with an error.
 
+Previous section: [Introduction to cluster computing](about-clusters.html)
 Next section:  [Slurm job scripts](job-scripts.html)

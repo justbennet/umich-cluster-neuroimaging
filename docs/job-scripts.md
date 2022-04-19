@@ -165,3 +165,4 @@ To submit your batch script, you use the `sbatch` command.
 $ sbatch example.sbat
 ```
 
+Previous section: [Basic set of Slurm job options](basic-job-options.html)

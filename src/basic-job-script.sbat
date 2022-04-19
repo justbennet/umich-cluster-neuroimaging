@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Submit this job script with
+#     $ subID=<subID> sbatch basic-job-script.sbat
+# e.g.,
+#     $ subID=sub101 sbatch basic-job-script.sbat
+# or set the subID variable to the subject's ID prior to running
+# sbatch.
+
 #---------------------------------------------
 # Slurm preamble
 
@@ -27,7 +34,7 @@ my_job_header
 #---------------------------------------------
 # Commands to run during the job
 
-# Subject ID will be exported prior to submitting the jo
+# Subject ID will be exported prior to submitting the job
 # e.g., sub-101_ses-BL_T1w.nii.gz
 T1_name=${subID}_ses-BL_T1w
 
