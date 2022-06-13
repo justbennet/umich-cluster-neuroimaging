@@ -145,7 +145,7 @@ dti_anslysis.sbat
 ```
 
 as the three files used for my DTI analysis.  You can, also, make your
-script an executable program by changing it _mode_ (permissions) once,
+script an executable program by changing its _mode_ (permissions) once,
 and then using it as a command.  For example,
 
 ```
