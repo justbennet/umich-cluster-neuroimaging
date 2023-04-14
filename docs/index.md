@@ -1,3 +1,5 @@
+# About this site
+
 This site provides some introductory material &ndash; explanations of
 concepts and examples &ndash; for running some common neuroimaging
 software on the clusters provided by the University of Michigan (UM).
