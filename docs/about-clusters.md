@@ -21,8 +21,7 @@ examples of when and why you might want to use a cluster.
 ## References
 
 [Slurm documentation](https://slurm.schedmd.com/)
-
-[Cluster terminology (a glossary)](https://docs.support.arc.umich.edu/terms/)
+<br>[Cluster terminology (a glossary)](https://docs.support.arc.umich.edu/terms/)
 
 
 
