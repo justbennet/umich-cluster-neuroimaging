@@ -21,9 +21,9 @@ examples of when and why you might want to use a cluster.
 # Why cluster computing not high performance computing?
 
 Many clusters started life as high performance computing (HPC) clusters, and
-some are.  However, as the 2010s came to a close, more and more of the users
-of clusters were not concerned with the high performance aspect.  Instead,
-they were concerned with high throughput (high volume) and transferring
+some still are.  However, as the 2010s came to a close, more and more of
+users of clusters were not concerned with the high performance aspect.  Instead,
+they were concerned with high job volume (throughput) and transferring
 their computing load from computers they bought and maintained to the cluster.
 That enables people to do work on their own computers that is not easily
 done on the cluster, most notably visualization.
