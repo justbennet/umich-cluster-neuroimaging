@@ -18,6 +18,22 @@ Please see the page [When to use ARC
 clusters](https://docs.support.arc.umich.edu/help/use/) for a some
 examples of when and why you might want to use a cluster.
 
+# Why cluster computing not high performance computing?
+
+Many clusters started life as high performance computing (HPC) clusters, and
+some are.  However, as the 2010s came to a close, more and more of the users
+of clusters were not concerned with the high performance aspect.  Instead,
+they were concerned with high throughput (high volume) and transferring
+their computing load from computers they bought and maintained to the cluster.
+That enables people to do work on their own computers that is not easily
+done on the cluster, most notably visualization.
+
+So, this site is mostly about how to use the cluster to run many jobs, not
+about how to make one job go faster or get bigger.  Given modern computers,
+it makes most sense for neuroimaging to think of jobs as being defined by
+subject, and that also makes it quite convenient to move back and forth
+between researcher-owned computers and the cluster.
+
 ## References
 
 [Slurm documentation](https://slurm.schedmd.com/)
