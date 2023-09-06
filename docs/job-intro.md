@@ -1,34 +1,104 @@
 # Introduction to Slurm jobs
 
+On this page, we will explain what jobs are, what information needs to be
+provided for the job to run, and how to run jobs from the command line.
+
+## What a job is
+
+Simply put, a job is a set of commands for the computer to run.  There are
+three main ways that you can run a job.
+
+<ol>
+   <li>Create a job script and submit it to be run;</li>
+   <li>Request an interactive command line, so you can type
+   commands;</li>
+   <li>Submit a job request for an interactive graphical interface
+   session.</li>
+</ol>
+
+Your own computer has a set number of cores (processors), as set amount
+of memory, a set amount of disk space, and you can leave it on as long
+as you wish.  A cluster both enables and requires you to specify how much
+of each you wish to use -- and pay for.
+
 This page will explain the most commonly used options for submitting jobs
 on ITS ARC clusters.  These options should be the same on any Slurm cluster
-not just on the ones run by ITS ARC.  You may wish to open [the example
-script](basic-job-script.html) in a separate window to follow along.
+not just on the ones run by ITS ARC.
 
+If you create a job script, then you put the options for the job into
+it.
+
+If you request an interactive command line session, you specify them
+with the job request command.
+
+If you use the Open OnDemand interface, then you specify the options
+using the form entry fields.
+
+We will look at job scripts here, but the same options are available
+using the other methods.
 
 The Slurm job script is a shell script, and on most Slurm clusters, the
-shell will be `bash`.  This is indicated by the first line,
+shell will be `bash`.  This is indicated by the first line, often
+called the shebang.
 
 ```
 #!/bin/bash
 ```
 
-which _must_ be there.
+which Slurm requires be there.
 
 For those without experience using shell scripts, the `#` character
 signifies a comment.  It is most common for comments to start in the first
-column, but they can also appear after commands.  Both of the following are
-valid comments.
+column, but they can also appear after commands.  Both of the following lines
+contain valid comments.
 
 ```
 # This is an example of a comment
 echo "Welcome to my world"  # Print a welcoming message
 ```
 
-Slurm options all begin with `#SBATCH`, and are considered comments by the
-shell.  Slurm searches your job script for lines that begin that way and
-reads the options until it reaches a line that is not either a comment, blank,
-or an option.  It then runs the script exactly as it appears with the shell.
+Slurm options all begin with the text (string) `#SBATCH`, and are considered
+comments by the bash shell.  Slurm searches your job script for lines that
+begin that way and reads the options until it reaches a line that is not
+either a comment, blank, or an option.  We refer to this part of the job
+script as the _preamble_.
+
+The rest of the script is then run by bash exactly as it appears.
+
+## Organization of a job script
+
+We recommend organizing your job scripts into the following sections.
+
+<ol>
+   <li>The shebang line (first line)</li>
+   <li>The Slurm preamble</li>
+   <li>Setup commands</li>
+   <li>Job information commands</li>
+   <li>Job commands</li>
+   <li>Job cleanup commands</li>
+</ol>
+
+We have already discussed the shebang and preamble, though we have not
+shown an example of the preamble yet.  We'll construct a preamble in
+a later section.
+
+Setup commands are any commands needed for you program to run.  These
+are often commands to set environment variables needed by the software
+that your job will run.
+
+Much of the useful software on the cluster must be specifically configured
+before it can be used.  Making software available this way enables the
+cluster to have otherwise incompatible software installed and usable.
+The most common and convenient way to set up the software you need is
+by using the module system, Lmod, which provides the `module` command.
+
+For more detailed information about Lmod and modules, please see
+[Using installed software](https://docs.support.arc.umich.edu/modules/).
+
+We will show some examples in a later section with common MRI analysis
+software.
+
+The cluster administrators provide the command `my_job_
 
 ## Slurm options
 
