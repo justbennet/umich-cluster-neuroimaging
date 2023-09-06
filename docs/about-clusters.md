@@ -36,7 +36,7 @@ between researcher-owned computers and the cluster.
 
 ## References
 
-[Slurm documentation](https://slurm.schedmd.com/)
+[Official Slurm documentation](https://slurm.schedmd.com/)
 <br>[Cluster terminology (a glossary)](https://docs.support.arc.umich.edu/terms/)
 
 
