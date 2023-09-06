@@ -1,4 +1,4 @@
-# Basic set of Slurm job options
+# Introduction to Slurm jobs
 
 This page will explain the most commonly used options for submitting jobs
 on ITS ARC clusters.  These options should be the same on any Slurm cluster
