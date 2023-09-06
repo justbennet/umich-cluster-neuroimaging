@@ -98,20 +98,52 @@ For more detailed information about Lmod and modules, please see
 We will show some examples in a later section with common MRI analysis
 software.
 
-The cluster administrators provide the command `my_job_
+The cluster administrators provide the command `my_job_header`, which
+will print to your output useful information about the job.  We recommend
+that you included it in all job scripts, but it is optional and not
+required.
 
-## Slurm options
+Job commands are what you would normally type at the command line to run
+your processing or analysis.
 
-We generally list the options as in the example.  The order you use is up to
-you, however we generally recommend listing them in about the same order, as
-it makes modifying and checking them easier if the order is consistent.  In
-general, we recommend that options that may change often appear at the top
-and options that change infrequently appear at the bottom of the preamble.
+Job cleanup consists of commands that do things like remove temporary
+data, copy output to the network file server, move files to other
+locations.
 
-We refer to the collection of options that appear in the job script and that
-tell Slurm about your job the _preamble_.  All of the Slurm options must
-appear before any actual commands run by your job.  Any options that follow
-a command will be ignored.
+Let us now take a look at the basic Slurm options you are likely to
+use most often.
+
+## Slurm options in the preamble
+
+Here is the complete shebang and preamble for a basic job.
+
+```
+#!/bin/bash
+#---------------------------------------------
+# Slurm preamble
+
+#SBATCH --job-name=id14237689
+#SBATCH --time=1:00:00
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=5g
+
+#SBATCH --account=example
+#SBATCH --partition=standard
+
+#SBATCH --mail-type=NONE
+```
+
+The order you use is up to you, however we generally recommend pick an order
+and use it consistently in all your job scripts.  That makes modifying and
+checking them easier if the order is consistent.  In general, we recommend
+that options that may change often appear at the top and options that change
+infrequently appear at the bottom of the preamble.
+
+All of the Slurm options must appear before any actual commands run by your
+job.  Any options that follow a command will be ignored.
 
 ### Name and run time
 
