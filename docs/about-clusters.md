@@ -61,4 +61,4 @@ and common candidate.
 
 
 Previous section: [Contents](index.html)
-Next section:  [Intro to Slurm jobs](job-intro.html)
+Next section:  [Introduction to Slurm jobs](job-intro.html)
