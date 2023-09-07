@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+{% seo %}
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header"><font size="+1">{{ site.title | default: site.github.repository_name }}</font></h1>
+        <ul>
+            <h2><a href="https://justbennet.github.io/umich-cluster-neuroimaging/">About this site</a></h2>
+            <h2><a href="https://justbennet.github.io/umich-cluster-neuroimaging/about-clusters.html">Introduction to cluster computing</a></h2>
+            <h2><a href="https://justbennet.github.io/umich-cluster-neuroimaging/job-intro.html">Introduction to Slurm jobs</a></h2>
+            <h2><a href="https://justbennet.github.io/umich-cluster-neuroimaging/job-scripts.html">Slurm job scripts</a></h2>
+            <h2><a href="https://justbennet.github.io/umich-cluster-neuroimaging/freesurfer.html">Running FreeSurfer on the cluster</a></h2>
+            <h2><a href="https://docs.support.arc.umich.edu/">ARC software support site</a></h2>
+        </ul>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+      </footer>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
